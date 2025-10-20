@@ -2,102 +2,149 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+      <div className="max-w-5xl mx-auto px-6 py-16 sm:px-8 sm:py-24">
+        {/* Header Section */}
+        <header className="text-center mb-16">
+          <div className="mb-8">
+            <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1 shadow-xl">
+              <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-gray-800">
+                <Image
+                  src="/toux06.jpeg"
+                  alt="煜炎的头像"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+            煜炎
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            10年+技术开发经验，专注于大型互联网产品研发与技术。
+            <br />
+            大厂技术负责人 | AI技术教学 | 《DeepSeek极简入门与应用》作者
+          </p>
+        </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        {/* Skills Section */}
+        <section className="mb-16 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+            <span className="text-3xl mr-3">💡</span>
+            我的技能
+          </h2>
+          <div className="space-y-4 text-gray-700 dark:text-gray-300">
+            <p className="leading-relaxed">
+              • 精通 React、Vue、TypeScript 等现代化技术栈，有大型应用架构设计经验
+            </p>
+            <p className="leading-relaxed">
+              • 深入研究 AI 与技术融合，专注 D2C、Copilot 等前沿技术
+            </p>
+            <p className="leading-relaxed">
+              • 丰富的技术团队管理经验，善于规划技术方向和推动团队创新
+            </p>
+          </div>
+        </section>
+
+        {/* Works Section */}
+        <section className="mb-16 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+            <span className="text-3xl mr-3">🚀</span>
+            我的作品
+          </h2>
+          <div className="space-y-6">
+            <div className="border-l-4 border-blue-500 pl-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                MCP Hub 中国
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
+                精选优质 MCP 服务的综合平台，包含 Web 应用、CLI 工具和 MCP 服务器，支持 Cursor 一键安装，为 AI 开发者提供便捷服务
+              </p>
+              <a
+                href="https://XXX/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                访问项目 →
+              </a>
+            </div>
+            <div className="border-l-4 border-purple-500 pl-6">
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                字流
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 mb-3">
+                AI 驱动的多平台内容发布工具。一次创作，智能适配公众号、知乎、掘金、知识星球、视频号、抖音、B站、小红书等平台格式
+              </p>
+              <a
+                href="https://XXX.online/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-purple-600 dark:text-purple-400 hover:underline"
+              >
+                访问项目 →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Achievements Section */}
+        <section className="mb-16 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
+            <span className="text-3xl mr-3">🏆</span>
+            我的成就
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4 text-gray-700 dark:text-gray-300">
+            <div className="flex items-start">
+              <span className="text-xl mr-2">✨</span>
+              <span>逆向分析 Copilot (Github 已获得上千 star)</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-xl mr-2">🎤</span>
+              <span>GMTC 全球大技术大会演讲嘉宾</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-xl mr-2">📚</span>
+              <span>《DeepSeek极简入门与应用》畅销书作者</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-xl mr-2">💬</span>
+              <span>知乎技术话题高赞回答者</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-xl mr-2">⭐</span>
+              <span>Trae 官方认证 Expert</span>
+            </div>
+            <div className="flex items-start">
+              <span className="text-xl mr-2">🎯</span>
+              <span>CSDN AI编程大赛官方特邀评委</span>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <section className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 shadow-lg text-white text-center">
+          <h2 className="text-2xl font-bold mb-6">联系我</h2>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 hover:bg-white/20 transition-all">
+              <p className="font-semibold mb-1">公众号</p>
+              <p className="text-lg">XXX</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg px-6 py-4 hover:bg-white/20 transition-all">
+              <p className="font-semibold mb-1">微信</p>
+              <p className="text-lg">XXX3</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="mt-16 text-center text-gray-500 dark:text-gray-400 text-sm">
+          <p>© 2025 煜炎. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   );
 }
